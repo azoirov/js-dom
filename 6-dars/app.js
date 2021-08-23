@@ -343,7 +343,7 @@ function commandClick() {
 	let enterBtn = document.querySelector(".enter");
 	enterBtn.addEventListener("click", function(e) {
 		console.log(true)
-		displayElement.innerHTML += "<br />"
+		displayElement.textContent += " "
 	})
 
 	let capslockBtn = document.querySelector(".capsLock")
@@ -356,7 +356,7 @@ function commandClick() {
 
 	let spaceBtn = document.querySelector(".space") 
 	spaceBtn.addEventListener("click", function(e) {
-		displayElement.innerHTML += "&emsp;"
+		displayElement.textContent += " "
 	})
 }
 
