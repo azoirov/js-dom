@@ -337,7 +337,7 @@ function commandClick() {
 
 	let tabBtn = document.querySelector(".tab");
 	tabBtn.addEventListener("click", function(e) {
-		displayElement.innerHTML += "<span>&emsp;</span>"
+		displayElement.innerHTML += "&emsp;"
 	})
 
 	let enterBtn = document.querySelector(".enter");
@@ -356,7 +356,7 @@ function commandClick() {
 
 	let spaceBtn = document.querySelector(".space") 
 	spaceBtn.addEventListener("click", function(e) {
-		displayElement.innerHTML += "<span>&nbsp;</span>"
+		displayElement.innerHTML += "&emsp;"
 	})
 }
 
