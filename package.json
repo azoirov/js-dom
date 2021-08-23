@@ -1,0 +1,19 @@
+{
+  "name": "lotin-kiril-transliterator-fulfil",
+  "version": "1.0.0",
+  "description": "Lotin Kiril va Kiril Lotin Transliterator. Fulfil Education markazi darslarida tayyorlandi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azoirov/js-dom.git"
+  },
+  "author": "Asadbek Zoirov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azoirov/js-dom/issues"
+  },
+  "homepage": "https://github.com/azoirov/js-dom#readme"
+}

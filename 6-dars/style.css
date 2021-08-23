@@ -1,0 +1,265 @@
+/** {
+	margin:  0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	height: 100vh;
+}
+
+input {
+	height: 40px;
+	width: 50%;
+	padding: 10px 20px;
+	outline: none;
+}
+
+.keyboard {
+	display: flex;
+	width: 60%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.keyboard span {
+	border: 2px solid #ccc;
+	padding: 10px 30px;
+	font-size: 25px;
+	border-radius: 5px;
+}*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 900px;
+  height: 365px;
+  background-color: #5e5e5e;
+  position: relative;
+  margin: .5rem auto;
+  display: -ms-grid;
+  display: grid;
+  padding: 20px;
+  -ms-grid-rows: 25px 60px 60px 60px 60px 60px;
+      grid-template-rows: 25px 60px 60px 60px 60px 60px;
+  border-radius: 15px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.button-style {
+  -webkit-box-shadow: 0 0 10px -5px black;
+          box-shadow: 0 0 10px -5px black;
+  background: #3e3e3e;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  line-height: 45px;
+  position: relative;
+}
+
+.esc.button-style {
+  width: 50px;
+  height: 25px;
+  line-height: 0px;
+  font-size: 15px;
+}
+
+.line {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 80px;
+      grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 80px;
+  grid-column-gap: 10px;
+  margin: 9px 0 9px 0;
+}
+
+.first-line {
+  width: 85%;
+}
+
+.second-line {
+  -ms-grid-columns: 60px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 70px;
+      grid-template-columns: 60px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 70px;
+}
+
+.second-line .button {
+  padding: 0;
+  line-height: 45px;
+}
+
+.display {
+  width: 700px;
+  height: 200px;
+  margin: 1rem auto;
+  position: relative;
+  background-color: #ccc;
+  -webkit-box-shadow: 5px 5px 30px -10px black;
+          box-shadow: 5px 5px 30px -10px black;
+  border-radius: 5px;
+  padding: 20px 20px;
+  line-height: 30px;
+  letter-spacing: 3px;
+  overflow-y: scroll;
+}
+
+.display p {
+  position: relative;
+  max-width: 700px;
+}
+
+.display span {
+  position: relative;
+  max-width: 700px;
+  overflow-x: hidden;
+  text-overflow: clip;
+  display: inline-block;
+}
+
+.third-line {
+  -ms-grid-columns: 80px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 110px;
+      grid-template-columns: 80px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 110px;
+}
+
+.capsLock .light {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  border-radius: 50%;
+  top: 5px;
+  right: 5px;
+  background-color: #2e2e2e;
+}
+
+.capsLock-on .light {
+  background-color: gold;
+  -webkit-box-shadow: 0px 0px 5px gold;
+          box-shadow: 0px 0px 5px gold;
+}
+
+.forth-line {
+  -ms-grid-columns: 125px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 125px;
+      grid-template-columns: 125px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 125px;
+}
+
+.shift {
+  font-size: 15px;
+  text-align: left;
+  padding-left: 10px;
+  line-height: 50px;
+}
+
+.fifth-line {
+  -ms-grid-columns: 50px 50px 50px 50px 300px 50px 50px  auto;
+      grid-template-columns: 50px 50px 50px 50px 300px 50px 50px  auto;
+}
+
+.arrows .button-style {
+  -webkit-box-shadow: 0 0 10px -5px black;
+          box-shadow: 0 0 10px -5px black;
+  background: #3e3e3e;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  line-height: 45px;
+  position: relative;
+}
+
+.arrows {
+  height: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60px 50px 60px;
+      grid-template-columns: 60px 50px 60px;
+  grid-column-gap: 10px;
+}
+
+.middle-arrows {
+  width: 50px;
+  height: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 25px 25px;
+      grid-template-rows: 25px 25px;
+}
+
+.up-arrow,
+.down-arrow {
+  background: #3e3e3e;
+  width: 50px;
+  height: 25px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  line-height: 20px;
+  position: relative;
+}
+
+.windows-icon {
+  width: 20px;
+  height: 50px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  fill: white;
+}
+
+.sound-button {
+  padding: 10px 90px 10px 50px;
+  width: 50px;
+  background-color: lightgray;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.container span:not(.arrows):not(.middle-arrows):active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.toggle-keyboard {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 50px;
+  width: 200px;
+  background-color: gray;
+  -webkit-text-fill-color: white;
+  outline: 2px solid black;
+  cursor: pointer;
+}
+
+.container.open {
+  opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  pointer-events: all;
+}

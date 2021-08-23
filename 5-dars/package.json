@@ -1,0 +1,17 @@
+{
+  "name": "lotin-kiril-transliterator-fulfil",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lotin",
+    "kiril",
+    "transliterator",
+    "fulfil"
+  ],
+  "author": "O'roljon Xidirboyev",
+  "license": "ISC"
+}
